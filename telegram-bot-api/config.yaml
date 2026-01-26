@@ -1,6 +1,6 @@
 name: "Telegram Bot API"
 description: "Self-hosted local instance of the Telegram Bot API server"
-version: "0.0.2"
+version: "0.0.3"
 slug: "telegram_bot_api"
 init: false
 arch:
@@ -8,13 +8,3 @@ arch:
 url: "https://github.com/hanwg/hassio-addons"
 ports:
   8081/tcp: 8081
-startup: system
-map:
-  - media
-options:
-  - api_id: ""
-  - api_hash: ""
-schema:
-  - api_id: str
-  - api_hash: str
-watchdog: tcp://[HOST]:[PORT:8081]
