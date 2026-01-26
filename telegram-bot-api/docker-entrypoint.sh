@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-
+echo 456
 # load home assistant add-on configs
 if [ -f "/data/options.json" ]; then
   API_ID=$(jq --raw-output ".api_id" /data/options.json)
