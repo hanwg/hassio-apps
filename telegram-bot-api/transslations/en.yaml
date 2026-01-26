@@ -1,0 +1,12 @@
+configuration:
+  api_id:
+    name: API ID
+    description: To get your API ID, please follow instructions at https://core.telegram.org/api/obtaining_api_id.
+  api_hash:
+    name: API Hash
+    description: To get your API hash, please follow instructions at https://core.telegram.org/api/obtaining_api_id.
+  log_level:
+    name: Log Level
+    description: 1 - Error, 2 - Warning, 3 - Info, 4 - Debug. To log HTTP requests, use log level of at least 3.
+network:
+  8081/TCP: The Telegram Bot API server port (Not used for Ingress)
