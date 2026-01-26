@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+echo 123
 pwd
 ls /data
 cat /data/options
