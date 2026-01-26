@@ -23,6 +23,8 @@ Refer to the [Pre-requisites](#pre-requisites) section if you have not created y
 
 Configure the options below and then click <kbd>Save</kbd>. Click <kbd>Restart</kbd> when prompted.
 
+After you have completed your configuration, continue with the Telegram Bot Integration Set-up to configure your Home Assistant Telegram Bot to connect to the add-on instead of the official Telegram API server (https://api.telegram.org).
+
 ### Option: `api_id`
 
 Obtained from https://my.telegram.org/apps.
@@ -40,8 +42,24 @@ Possible values are:
 - `3` - Info. Shows HTTP requests.
 - `4` - Debug
 
-After you have completed your configuration, remember to restart the add-on.
-Continue with the Telegram Bot Integration Set-up to configure your Home Assistant Telegram Bot to connect to the add-on instead of the official Telegram API server (https://api.telegram.org).
+### Example
+
+The following is an example add-on yaml configuration.
+You must replace `api_id` and `api_hash` with your own values.
+
+```
+api_id: "12345678"
+api_hash: 1234567890abcdef1234567890abcdef
+log_level: 1
+```
+
+## Telegram Bot API Endpoint
+
+Note: You should have already installed, configured and started the add-on.
+
+The add-on exposes an endpoint which can be reached using the following URLs:
+- `http://localhost:8081/bot` - Used within Home Assistant.
+- `https://YOUR-HA:8081/bot` - Replace *YOUR-HA* with your Home Assistant hostname.
 
 ## Telegram Bot Integration Set-up
 
@@ -55,6 +73,17 @@ To configure your Telegram bot to use your own Telegram bot API server instance 
 4. In the API endpoint field, specify the endpoint of the add-on: `http://localhost:8081/bot` and click <kbd>Submit</kbd>.
 
 For more details, please refer to the documentation: https://www.home-assistant.io/integrations/telegram_bot/#options
+
+## FAQs
+
+### Why would I want to use this over the official server `https://api.telegram.org`?
+
+Running your own server has advantages such as larger file size limits for messages and faster response times.
+For more details, please refer to [using a local bot API server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) in the official documentation.
+
+### Can I chat with other users on other Telegram bot API servers?
+
+Yes, all Telegram bot API servers connect to the Telegram's MTProto servers.
 
 ## Troubleshooting
 
