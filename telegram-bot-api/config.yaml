@@ -14,7 +14,7 @@ map:
 options:
   - api_id: ""
   - api_hash: ""
-schcema:
+schema:
   - api_id: str
   - api_hash: str
 watchdog: tcp://[HOST]:[PORT:8081]
