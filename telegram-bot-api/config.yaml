@@ -1,6 +1,6 @@
 name: "Telegram Bot API"
 description: "Self-hosted local instance of the Telegram Bot API server"
-version: "0.0.1"
+version: "0.0.2"
 slug: "telegram_bot_api"
 init: false
 arch:
