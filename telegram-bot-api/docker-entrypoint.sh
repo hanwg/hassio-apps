@@ -5,6 +5,7 @@ set -e
 if [ -f "/data/options.json" ]; then
   API_ID=$(jq --raw-output ".api_id" /data/options.json)
   API_HASH=$(jq --raw-output ".api_hash" /data/options.json)
+  LOG_LEVEL=$(jq --raw-output ".log_level" /data/options.json)
 fi
 
 mkdir -p /data/telegram-bot-api
@@ -16,4 +17,4 @@ mkdir -p /data/telegram-bot-api
   --api-id=${API_ID} \
   --api-hash=${API_HASH} \
   --dir=/data/telegram-bot-api \
-  --verbosity=3
+  --verbosity=${LOG_LEVEL}

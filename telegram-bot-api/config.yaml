@@ -1,6 +1,6 @@
 name: "Telegram Bot API"
 description: "Self-hosted local instance of the Telegram Bot API server"
-version: "0.1.1"
+version: "0.1.2"
 slug: "telegram_bot_api"
 init: false
 arch:
@@ -14,7 +14,9 @@ map:
 options:
   api_id: ""
   api_hash: ""
+  log_level: 2
 schema:
   api_id: str
   api_hash: str
+  log_level: int
 watchdog: tcp://[HOST]:[PORT:8081]
