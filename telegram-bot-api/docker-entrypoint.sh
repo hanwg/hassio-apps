@@ -7,8 +7,7 @@ if [ -f "/data/options.json" ]; then
   API_HASH=$(jq --raw-output ".api_hash" /data/options.json)
   LOG_LEVEL=$(jq --raw-output ".log_level" /data/options.json)
 fi
-cat /data/options.json
-echo $API_ID
+
 mkdir -p /data/telegram-bot-api
 
 /usr/local/bin/telegram-bot-api --version
