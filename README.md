@@ -1,6 +1,6 @@
 # Home Assistant Add-on: Telegram Bot API
 
-[![GitHub Release][releases-shield]][releases] [![License][license-shield]](LICENSE.md)
+![GitHub Release][releases-shield] [![License][license-shield]](LICENSE.md)
 
 ![Supports i386 Architecture][i386-shield]
 
