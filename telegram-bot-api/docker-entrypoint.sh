@@ -15,9 +15,9 @@ mkdir -p /data/telegram-bot-api
 echo "Start Telegram Bot API"
 
 /usr/local/bin/telegram-bot-api \
-  --local \
   --api-id=${API_ID} \
   --api-hash=${API_HASH} \
+  --local \
   --dir=/data/telegram-bot-api \
   --verbosity=${LOG_LEVEL}
 
