@@ -71,6 +71,8 @@ If you have not done so, please refer to the [Telegram bot documentation](https:
 
 ### Integration Configuration
 
+Requires Home Assistant `2026.2` or later.
+
 To configure your Telegram bot to use your own Telegram bot API server instance (this add-on), do the following:
 1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Devices & services</kbd>.
 2. Click on <kbd>Telegram bot</kbd>
