@@ -13,7 +13,7 @@ Before you begin, you will need to [create your Telegram application](https://co
 
 1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Apps</kbd> > <kbd>App store</kbd>.
 2. Click on the <kbd>...</kbd> icon then <kbd>Repositories</kbd>.
-3. In the <kbd>Add</kbd> field, specify this repository's URL `https://github.com/hanwg/hassio-addons` and then click <kbd>+ Add</kbd>.
+3. In the <kbd>Add</kbd> field, specify this repository's URL `https://github.com/hanwg/hassio-apps` and then click <kbd>+ Add</kbd>.
 4. Refresh the page. You should see a new app named <kbd>Home Assistant App: Telegram Bot API</kbd>. Note: If you do not see the app, wait a few moments and refresh the page again.
 5. Click on the app then click <kbd>Install</kbd>. Wait a few minutes for it to finish downloading.
 6. Click on <kbd>Start</kbd>.
@@ -129,7 +129,7 @@ The error occurs because `api_id` and/or `api_hash` is invalid.
 
 To resolve this issue,
 1. Check your `api_id` and `api_hash` at https://my.telegram.org/apps.
-2. Update the add-on configuration accordingly and restart the app.
+2. Update the app configuration accordingly and restart the app.
 
 ## Support
 
