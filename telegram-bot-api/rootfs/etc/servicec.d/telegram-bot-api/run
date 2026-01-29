@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the example service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+declare API_ID
+declare API_HASH
+declare LOG_LEVEL
+
+API_ID="$(bashio::config 'api_id')"
+API_HASH="$(bashio::config 'api_hash')"
+LOG_LEVEL="$(bashio::config 'log_level')"
+
+/usr/local/bin/telegram-bot-api --version
+
+exec /usr/local/bin/telegram-bot-api \
+  --api-id=${API_ID} \
+  --api-hash=${API_HASH} \
+  --local \
+  --dir=/data/telegram-bot-api \
+  --verbosity=${LOG_LEVEL}
