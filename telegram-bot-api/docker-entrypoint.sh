@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/usr/bin/with-contenv bashio
 set -e
 
 cat /data/options.json
-
-CONFIG_PATH=/data/options.json
+echo 111
 API_ID="$(bashio::config 'api_id')"
 API_HASH="$(bashio::config 'api_hash')"
 LOG_LEVEL="$(bashio::config 'log_level')"
