@@ -1,21 +1,22 @@
-# Home Assistant Add-on: Telegram Bot API
+# Home Assistant App: Telegram Bot API
 
 ![GitHub Release][releases-shield] [![License][license-shield]](LICENSE.md)
 
-![Supports i386 Architecture][i386-shield]
+![Supports amd64 Architecture][amd64-shield] ![Supports aarch64 Architecture][aarch64-shield]
 
 Telegram Bot API server for Home Assistant.
 
-[Documentation](https://github.com/hanwg/hassio-addons/blob/main/telegram-bot-api/DOCS.md)
+[Documentation](https://github.com/hanwg/hassio-apps/blob/main/telegram-bot-api/DOCS.md)
 
 ## About
 
-This add-on allows you to run your own [Telegram Bot API server](https://github.com/tdlib/telegram-bot-api) instead of using the official server `https://api.telegram.org`.
+This app allows you to run your own [Telegram Bot API server](https://github.com/tdlib/telegram-bot-api) instead of using the official server `https://api.telegram.org`.
 Running your own server has advantages such as larger file size limits for messages and faster response times.
 For more details, please refer to [using a local bot API server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) in the official documentation.
 
-The addon is built based on the [aiogram/telegram-bot-api](https://github.com/aiogram/telegram-bot-api) image with minor customizations to be able to run on Home Assistant with basic configuration.
+The app is built based using the [hanwg/telegram-bot-api](https://github.com/hanwg/telegram-bot-api) image which uses the [official source](https://github.com/tdlib/telegram-bot-api).
 
-[releases-shield]: https://img.shields.io/github/release/hanwg/hassio-addons.svg
-[license-shield]: https://img.shields.io/github/license/hanwg/hassio-addons.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[releases-shield]: https://img.shields.io/github/release/hanwg/hassio-apps.svg
+[license-shield]: https://img.shields.io/github/license/hanwg/hassio-apps.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg

@@ -1,24 +1,24 @@
-# Home Assistant Add-on: Telegram Bot API
+# Home Assistant App: Telegram Bot API
 
 Run your own instance of the Telegram Bot API server.
 
-The add-on has read-only access to your `media` folder.
-For examples on how to send files from the `media` folder, refer to the [automation examples](#automation-examples) section.
+The app has read-only access to your `media` folder.
+For examples on how to send files from the `media` folder, please refer to the [automation examples](#automation-examples) section.
 
 ## Pre-requisites
 
-Before you being, you will need to [create your Telegram application](https://core.telegram.org/api/obtaining_api_id) to obtain your `api_id` and `api_hash` which will be required for configuration later.
+Before you begin, you will need to [create your Telegram application](https://core.telegram.org/api/obtaining_api_id) to obtain your `api_id` and `api_hash` which will be required for configuration later.
 
 ## Installation
 
-1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Add-ons</kbd> > <kbd>Add-on store</kbd>.
+1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Apps</kbd> > <kbd>App store</kbd>.
 2. Click on the <kbd>...</kbd> icon then <kbd>Repositories</kbd>.
 3. In the <kbd>Add</kbd> field, specify this repository's URL `https://github.com/hanwg/hassio-addons` and then click <kbd>+ Add</kbd>.
-4. Refresh the page. You should see a new add-on named <kbd>Home Assistant Add-on: Telegram Bot API</kbd>. Note: If you do not see the add-on, wait a few moments and refresh the page again.
-5. Click on the add-on then click <kbd>Install</kbd>. Wait a few minutes for it to finish downloading.
+4. Refresh the page. You should see a new app named <kbd>Home Assistant App: Telegram Bot API</kbd>. Note: If you do not see the app, wait a few moments and refresh the page again.
+5. Click on the app then click <kbd>Install</kbd>. Wait a few minutes for it to finish downloading.
 6. Click on <kbd>Start</kbd>.
 
-Once you have successfully installed the add-on, continue with the configuration below.
+Once you have successfully installed the app, continue with the configuration below.
 
 ## Configuration
 
@@ -26,7 +26,7 @@ Refer to the [Pre-requisites](#pre-requisites) section if you have not created y
 
 Configure the options below and then click <kbd>Save</kbd>. Click <kbd>Restart</kbd> when prompted.
 
-After you have completed your configuration, continue with the Telegram Bot Integration Set-up to configure your Home Assistant Telegram Bot to connect to the add-on instead of the official Telegram API server (https://api.telegram.org).
+After you have completed your configuration, continue with the Telegram Bot Integration Set-up to configure your Home Assistant Telegram Bot to connect to the app instead of the official Telegram API server (https://api.telegram.org).
 
 ### Option: `api_id`
 
@@ -47,7 +47,7 @@ Possible values are:
 
 ### Configuration Example
 
-The following is an example add-on yaml configuration.
+The following is an example yaml configuration.
 You must replace `api_id` and `api_hash` with your own values.
 
 ```
@@ -58,9 +58,9 @@ log_level: 1
 
 ## Telegram Bot API Endpoint
 
-Note: You should have already installed, configured and started the add-on.
+Note: You should have already installed, configured and started the app.
 
-The add-on exposes an endpoint which can be reached using the following URLs:
+The app exposes an endpoint which can be reached using the following URLs:
 - `http://localhost:8081/bot` - Used within Home Assistant.
 - `https://YOUR-HA:8081/bot` - Replace *YOUR-HA* with your Home Assistant hostname.
 
@@ -73,11 +73,11 @@ If you have not done so, please refer to the [Telegram bot documentation](https:
 
 Requires Home Assistant `2026.2` or later.
 
-To configure your Telegram bot to use your own Telegram bot API server instance (this add-on), do the following:
+To configure your Telegram bot to use your own Telegram bot API server instance (this app), do the following:
 1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Devices & services</kbd>.
 2. Click on <kbd>Telegram bot</kbd>
 3. Click on the gear icon of the Telegram bot to display the options for the config entry.
-4. In the API endpoint field, specify the endpoint of the add-on: `http://localhost:8081/bot` and click <kbd>Submit</kbd>.
+4. In the API endpoint field, specify the endpoint of the app: `http://localhost:8081/bot` and click <kbd>Submit</kbd>.
 
 For more details, please refer to the documentation: https://www.home-assistant.io/integrations/telegram_bot/#options
 
@@ -99,20 +99,20 @@ For more details, please refer to [using a local bot API server](https://core.te
 
 ### Can I chat with other users on other Telegram bot API servers?
 
-Yes, all Telegram bot API servers connect to the Telegram's MTProto servers.
+Yes, because all Telegram bot API servers connect to the same set of Telegram MTProto servers.
 
 ## Troubleshooting
 
 ### Server error: `Can't parse as an integer string`
 
-You may observe the following in the add-on logs:
+You may observe the following in the app logs:
 ```
 /usr/local/bin/telegram-bot-api: Can't parse as an integer string
 ```
 
 The error occurs because the value of `api_id` is invalid or too long.
 
-To resolve this issue, update `api_id` accordingly in your configuration and restart the add-on.
+To resolve this issue, update `api_id` accordingly in your configuration and restart the app.
 
 ### Client error: `Unauthorized: invalid api-id/api-hash`
 
@@ -129,10 +129,10 @@ The error occurs because `api_id` and/or `api_hash` is invalid.
 
 To resolve this issue,
 1. Check your `api_id` and `api_hash` at https://my.telegram.org/apps.
-2. Update the add-on configuration accordingly and restart the add-on.
+2. Update the add-on configuration accordingly and restart the app.
 
 ## Support
 
 Questions? Issues?
 
-Please [open an issue](https://github.com/hanwg/hassio-addons/issues).
+Please [open an issue](https://github.com/hanwg/hassio-apps/issues).

@@ -2,7 +2,7 @@
 
 ## Development
 
-1. Create a fork of this repository `https://github.com/hanwg/hassio-addons`.
+1. Create a fork of this repository `https://github.com/hanwg/hassio-apps`.
 2. Clone your fork.
 3. Open the project with VSCode.
 4. Open the command palette (<kbd>Ctrl+Shift+P</kbd> for Windows) and select <kbd>Dev Containers: Rebuild and Reopen in Container</kbd>.
@@ -15,4 +15,4 @@
 
 ## Useful Links
 
-Add-on tutorial: https://developers.home-assistant.io/docs/add-ons/tutorial#bonus-working-with-app-options
+Creating a new app app tutorial: https://developers.home-assistant.io/docs/add-ons/tutorial

@@ -4,8 +4,9 @@ version: "0.1.7"
 slug: "telegram_bot_api"
 init: false
 arch:
-  - i386
-url: "https://github.com/hanwg/hassio-addons"
+  - amd64
+  - aarch64
+url: "https://github.com/hanwg/hassio-apps"
 ports:
   8081/tcp: 8081
 startup: system
