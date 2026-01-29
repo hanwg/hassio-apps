@@ -1,6 +1,12 @@
 #!/bin/sh
 set -e
 
+API_ID="$(bashio::config 'api_id')"
+API_HASH="$(bashio::config 'api_hash')"
+LOG_LEVEL="$(bashio::config 'log_level')"
+echo "target is ---- $LOG_LEVEL"
+
+
 # load home assistant app configs
 if [ -f "/data/options.json" ]; then
   API_ID=$(jq --raw-output ".api_id" /data/options.json)

@@ -1,10 +1,8 @@
-FROM aiogram/telegram-bot-api
+FROM ghcr.io/hanwg/telegram-bot-api:9.3
 
 
 # override defaults from aiogram/telegram-bot-api
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN \
-  # jq for parsing options.json
-  apk add jq && \  
   chmod a+x /docker-entrypoint.sh
