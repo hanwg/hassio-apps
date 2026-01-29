@@ -12,7 +12,7 @@ API_ID="$(bashio::config 'api_id')"
 API_HASH="$(bashio::config 'api_hash')"
 LOG_LEVEL="$(bashio::config 'log_level')"
 
-/usr/local/bin/telegram-bot-api --version
+bashio::log.info "$(/usr/local/bin/telegram-bot-api --version)"
 
 exec /usr/local/bin/telegram-bot-api \
   --api-id=${API_ID} \
