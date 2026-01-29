@@ -2,7 +2,7 @@
 
 ![GitHub Release][releases-shield] [![License][license-shield]](LICENSE.md)
 
-![Supports amd64 Architecture][i386-shield] ![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield] ![Supports aarch64 Architecture][aarch64-shield]
 
 Telegram Bot API server for Home Assistant.
 
@@ -14,7 +14,7 @@ This app allows you to run your own [Telegram Bot API server](https://github.com
 Running your own server has advantages such as larger file size limits for messages and faster response times.
 For more details, please refer to [using a local bot API server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) in the official documentation.
 
-The app is built based on the [aiogram/telegram-bot-api](https://github.com/aiogram/telegram-bot-api) image with minor customizations to be able to run on Home Assistant with basic configuration.
+The app is built using the [hanwg/telegram-bot-api](https://github.com/hanwg/telegram-bot-api) image which uses the [official source](https://github.com/tdlib/telegram-bot-api).
 
 [releases-shield]: https://img.shields.io/github/release/hanwg/hassio-apps.svg
 [license-shield]: https://img.shields.io/github/license/hanwg/hassio-apps.svg

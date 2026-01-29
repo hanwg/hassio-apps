@@ -2,8 +2,14 @@
 
 Run your own instance of the Telegram Bot API server.
 
-The app has read-only access to your `media` folder.
-For examples on how to send files from the `media` folder, please refer to the [automation examples](#automation-examples) section.
+Overview:
+1. [Create Telegram application](https://core.telegram.org/api/obtaining_api_id) to obtain `api_id` and `api_hash`.
+2. In Home Assistant, Install, Configure and then Start the app.
+3. In Home Assistant (`2026.2` or later), configure the Telegram bot integration to use the API endpoint (for example, <kbd>http://localhost:8081</kbd>) of the app.
+
+You do not need to make any changes to your existing Telegram bot automations or scripts.
+
+Note: The app has read-only access to your `media` folder.
 
 ## Pre-requisites
 
@@ -61,17 +67,15 @@ log_level: 1
 Note: You should have already installed, configured and started the app.
 
 The app exposes an endpoint which can be reached using the following URLs:
-- `http://localhost:8081/bot` - Used within Home Assistant.
-- `https://YOUR-HA:8081/bot` - Replace *YOUR-HA* with your Home Assistant hostname.
+- `http://localhost:8081` - Used within Home Assistant.
+- `https://YOUR-HA:8081` - Replace *YOUR-HA* with your Home Assistant hostname.
 
-## Telegram Bot Integration
+## Telegram Bot Integration Configuration
 
 This section assumes that you have already set-up the Telegram bot integration.
 If you have not done so, please refer to the [Telegram bot documentation](https://www.home-assistant.io/integrations/telegram_bot).
 
-### Integration Configuration
-
-Requires Home Assistant `2026.2` or later.
+This configuration requires Home Assistant `2026.2` or later.
 
 To configure your Telegram bot to use your own Telegram bot API server instance (this app), do the following:
 1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Devices & services</kbd>.
@@ -79,16 +83,7 @@ To configure your Telegram bot to use your own Telegram bot API server instance 
 3. Click on the gear icon of the Telegram bot to display the options for the config entry.
 4. In the API endpoint field, specify the endpoint of the app: `http://localhost:8081/bot` and click <kbd>Submit</kbd>.
 
-For more details, please refer to the documentation: https://www.home-assistant.io/integrations/telegram_bot/#options
-
-### Automation Examples
-
-Send a photo from the `media` folder.
-```
-action: telegram_bot.send_photo
-data:
-  url: file:///media/example.jpg
-```
+For more details, please refer to the documentation: https://www.home-assistant.io/integrations/telegram_bot/#configuration
 
 ## FAQs
 
