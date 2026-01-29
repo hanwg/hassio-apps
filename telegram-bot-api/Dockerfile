@@ -1,4 +1,5 @@
-FROM ghcr.io/hanwg/telegram-bot-api:9.3
+ARG BUILD_ARCH
+FROM ghcr.io/hanwg/telegram-bot-api/$BUILD_ARCH:9.3
 
 
 # override defaults from aiogram/telegram-bot-api
