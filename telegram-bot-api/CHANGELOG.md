@@ -1,10 +1,5 @@
 # Changelog
 
-## 0.1.7
-
-Fixes
-- Local mode
-
-## 0.1.6
+## 9.3
 
 - Initial release
