@@ -16,7 +16,8 @@ For more details, please refer to [using a local bot API server](https://core.te
 
 The app is built using the [hanwg/telegram-bot-api](https://github.com/hanwg/telegram-bot-api) image which uses the [official source](https://github.com/tdlib/telegram-bot-api).
 
-[releases-shield]: https://img.shields.io/github/release/hanwg/hassio-apps.svg
+[releases-shield]: https://img.shields.io/github/v/release/hanwg/hassio-apps.svg
 [license-shield]: https://img.shields.io/github/license/hanwg/hassio-apps.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+
