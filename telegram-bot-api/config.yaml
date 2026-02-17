@@ -9,7 +9,7 @@ arch:
   - aarch64
 url: "https://github.com/hanwg/hassio-apps"
 ports:
-  8081/tcp: null
+  8081/tcp: 8081
   8082/tcp: null
 ingress: true
 ingress_port: 8082
