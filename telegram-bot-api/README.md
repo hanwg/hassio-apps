@@ -8,6 +8,8 @@ Telegram Bot API server for Home Assistant.
 
 [Documentation](https://github.com/hanwg/hassio-apps/blob/main/telegram-bot-api/DOCS.md)
 
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhanwg%2Fhassio-apps)
+
 ## About
 
 This app allows you to run your own [Telegram Bot API server](https://github.com/tdlib/telegram-bot-api) instead of using the official server `https://api.telegram.org`.
