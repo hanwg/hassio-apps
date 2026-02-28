@@ -10,3 +10,4 @@ configuration:
     description: 1 - Error, 2 - Warning, 3 - Info, 4 - Debug. To log HTTP requests, use log level of at least 3.
 network:
   8081/tcp: The Telegram Bot API server port (Not used for Ingress)
+  8082/tcp: The Telegram Bot API statistics port (Ingress)
