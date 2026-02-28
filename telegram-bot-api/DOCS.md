@@ -4,7 +4,7 @@
 
 This app allows you to run your own instance of the Telegram Bot API server. The illustration below shows the architecture after the setup is completed:
 
-![Architecture](/images/architecture.svg)
+![Architecture](https://github.com/hanwg/hassio-apps/raw/dev/images/architecture.svg)
 
 ## 1. Pre-requisites
 
@@ -13,20 +13,20 @@ This app allows you to run your own instance of the Telegram Bot API server. The
 
 ## 2. Installation
 
-1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Apps</kbd> > <kbd>App store</kbd>.
-2. Click on the <kbd>...</kbd> icon then <kbd>Repositories</kbd>.
-3. In the <kbd>Add</kbd> field, specify this repository's URL `https://github.com/hanwg/hassio-apps` and then click <kbd>+ Add</kbd>.
-4. Refresh the page. You should see a new app named <kbd>Home Assistant App: Telegram Bot API</kbd>. Note: If you do not see the app, wait a few moments and refresh the page again.
-5. Click on the app then click <kbd>Install</kbd>. Wait a few minutes for it to finish downloading.
+1. On your Home Assistant, go to `Settings` > `Apps` > `App store`.
+2. Click on the `...` icon then `Repositories`.
+3. In the `Add` field, specify this repository's URL `https://github.com/hanwg/hassio-apps` and then click `+ Add`.
+4. Refresh the page. You should see a new app named `Home Assistant App: Telegram Bot API`. Note: If you do not see the app, wait a few moments and refresh the page again.
+5. Click on the app then click `Install`. Wait a few minutes for it to finish downloading.
 
 Once you have successfully installed the app, continue with the app configuration below.
 
 ## 3. App Configuration
 
-1. Go to <kbd>Settings</kbd> > <kbd>Apps</kbd> > <kbd>Telegram Bot API</kbd>.
-2. Click on the <kbd>Configuration</kbd> tab.
-3. Specify the options and then click <kbd>Save</kbd>. Click <kbd>Restart</kbd> to restart the app if prompted.
-4. Go to the <kbd>Info</kbd> tab and click <kbd>Start</kbd> to run the app.
+1. Go to `Settings` > `Apps` > `Telegram Bot API`.
+2. Click on the `Configuration` tab.
+3. Specify the options and then click `Save`. Click `Restart` to restart the app if prompted.
+4. Go to the `Info` tab and click `Start` to run the app.
 
 ### Options
 
@@ -64,14 +64,14 @@ This section assumes that you have already set-up the Telegram bot integration.
 If you have not done so, please refer to the [Telegram bot integration](https://www.home-assistant.io/integrations/telegram_bot) documentation.
 
 Perform the following step to configure your Telegram bot to connect to this app:
-1. On your Home Assistant, go to <kbd>Settings</kbd> > <kbd>Devices & services</kbd>.
-2. Click on <kbd>Telegram bot</kbd>.
+1. On your Home Assistant, go to `Settings` > `Devices & services`.
+2. Click on `Telegram bot`.
 3. Click on the gear icon of the Telegram bot to display the options for the config entry.
-4. In the API endpoint field, specify the Telegram bot API endpoint: `http://localhost:8081/bot` and click <kbd>Submit</kbd>.
+4. In the API endpoint field, specify the Telegram bot API endpoint: `http://localhost:8081/bot` and click `Submit`.
 
 🎉 Congratulations! Your Telegram bot is now connected to your local Telegram bot API server.
 
-To verify the connection, go to <kbd>Settings</kbd> > <kbd>Apps</kbd> > <kbd>Telegram Bot API</kbd> and click <kbd>Open Web UI</kbd>.
+To verify the connection, go to `Settings` > `Apps` > `Telegram Bot API` and click `Open Web UI`.
 In the statistics screen, check that `active_bot_count` is displaying the correct value.
 
 ## FAQs
