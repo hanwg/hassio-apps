@@ -4,11 +4,11 @@
 
 This app allows you to run your own instance of the Telegram Bot API server. The illustration below shows the architecture after the setup is completed:
 
-![Architecture](https://github.com/hanwg/hassio-apps/raw/dev/images/architecture.svg)
+![Architecture](https://github.com/hanwg/hassio-apps/raw/main/images/architecture.svg)
 
 ## 1. Pre-requisites
 
-1. **Home Assistant:** Version 2026.2 or later is required.
+1. **Home Assistant:** Version 2026.4 or later is required.
 2. **Telegram app credentials:** [Create your Telegram application](https://core.telegram.org/api/obtaining_api_id) to obtain your `api_id` and `api_hash` which will be required for configuration later.
 
 ## 2. Installation
@@ -63,11 +63,18 @@ You will then need to configure your Home Assistant Telegram Bot Integration to 
 This section assumes that you have already set-up the Telegram bot integration.
 If you have not done so, please refer to the [Telegram bot integration](https://www.home-assistant.io/integrations/telegram_bot) documentation.
 
-Perform the following step to configure your Telegram bot to connect to this app:
+Perform the following steps to configure your Telegram bot to connect to this app:
 1. On your Home Assistant, go to `Settings` > `Devices & services`.
 2. Click on `Telegram bot`.
-3. Click on the gear icon of the Telegram bot to display the options for the config entry.
-4. In the API endpoint field, specify the Telegram bot API endpoint: `http://localhost:8081/bot` and click `Submit`.
+3. Click on the `...` icon next to your Telegram bot and then `Reconfigure`.
+4. In the **Telegram bot setup** dialog,
+    - Set **Platform** to `Webhooks`.
+    - Expand the `Advanced settings` section and update the **API endpoint** field to use this app's endpoint: `http://localhost:8081/bot`.
+    - Click `Submit` to continue with the webhook configuration.
+5. In the **Webhooks network configuration** dialog,
+    - Set the **URL** to `http://homeassistant:8123`. This is a special URL which allows apps to communicate with your Home Assistant instance.
+    - Set **Trusted networks** to `172.30.32.0/23`. This is the network which the app resides in.
+    - Click `Submit`.
 
 🎉 Congratulations! Your Telegram bot is now connected to your local Telegram bot API server.
 
