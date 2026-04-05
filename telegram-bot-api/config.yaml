@@ -1,7 +1,7 @@
 name: "Telegram Bot API"
 description: "Self-hosted local instance of the Telegram Bot API server"
 image: "ghcr.io/hanwg/telegram-bot-api/{arch}"
-version: "9.4"
+version: "9.6"
 slug: "telegram_bot_api"
 init: false
 arch:
